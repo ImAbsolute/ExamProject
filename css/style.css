@@ -161,13 +161,17 @@
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
+    background-color: #998675;
+    padding: 21px 39px;
+    border-radius: 5px;
 }
+
 
 .pagination {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 260px 0 40px 0;
+    margin: 230px 0 40px 0;
 }
   
 .pagination-item {
