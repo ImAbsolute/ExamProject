@@ -22,7 +22,11 @@
                 <span class="logo-txt">Waxom</span>
             </a>
             <nav class="header-nav">
-                <ul class="header-nav-list">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="header-nav-list menu">
                     <li class="header-nav-list-item">
                         <a href="#" class="header-nav-list-item-link">Home</a>
                     </li>
@@ -47,25 +51,47 @@
                     <li class="header-nav-list-item">
                         <a href="#" class="header-nav-list-item-link">Contact</a>
                     </li>
+                    <li class="header-nav-list-item">
+                        <button class="header-button-basket">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="20" height="27" viewBox="0 0 20 27">
+                                <path
+                                    d="M15.995483,4.9985275 C15.995483,4.9985275 14.496216,4.9985275 14.496216,4.9985275 C14.496216,3.3417358 12.483032,1.998188 9.998779,1.998188 C7.5144043,1.998188 5.5009766,3.3417358 5.5009766,4.9985275 C5.5009766,4.9985275 4.001831,4.9985275 4.001831,4.9985275 C2.3458252,4.9985275 1.0032959,6.3412437 1.0032959,7.997204 C1.0032959,7.997204 1.0032959,22.995163 1.0032959,22.995163 C1.0032959,24.651123 2.3458252,25.994255 4.001831,25.994255 C4.001831,25.994255 15.995483,25.994255 15.995483,25.994255 C17.651611,25.994255 18.994263,24.651123 18.994263,22.995163 C18.994263,22.995163 18.994263,7.997204 18.994263,7.997204 C18.994263,6.3412437 17.651611,4.9985275 15.995483,4.9985275 ZM9.998779,3.4983559 C11.655029,3.4983559 12.99707,3.96241 12.99707,4.9985275 C12.99707,4.9985275 7.000244,4.9985275 7.000244,4.9985275 C7.000244,3.96241 8.342651,3.4983559 9.998779,3.4983559 ZM17.494995,22.995163 C17.494995,23.823143 16.823486,24.494087 15.995483,24.494087 C15.995483,24.494087 4.001831,24.494087 4.001831,24.494087 C3.173584,24.494087 2.5024414,23.823143 2.5024414,22.995163 C2.5024414,22.995163 2.5024414,21.495407 2.5024414,21.495407 C2.5024414,21.495407 17.494995,21.495407 17.494995,21.495407 C17.494995,21.495407 17.494995,22.995163 17.494995,22.995163 ZM17.494995,19.99524 C17.494995,19.99524 2.5024414,19.99524 2.5024414,19.99524 C2.5024414,19.99524 2.5024414,7.997204 2.5024414,7.997204 C2.5024414,7.168808 3.173584,6.497452 4.001831,6.497452 C4.001831,6.497452 5.5009766,6.497452 5.5009766,6.497452 C5.5009766,6.497452 5.5009766,10.997543 5.5009766,10.997543 C5.5009766,10.997543 7.000244,10.997543 7.000244,10.997543 C7.000244,10.997543 7.000244,6.497452 7.000244,6.497452 C7.000244,6.497452 12.99707,6.497452 12.99707,6.497452 C12.99707,6.497452 12.99707,10.997543 12.99707,10.997543 C12.99707,10.997543 14.496216,10.997543 14.496216,10.997543 C14.496216,10.997543 14.496216,6.497452 14.496216,6.497452 C14.496216,6.497452 15.995483,6.497452 15.995483,6.497452 C16.823975,6.497452 17.494995,7.168808 17.494995,7.997204 C17.494995,7.997204 17.494995,19.99524 17.494995,19.99524 Z" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <form action="search" class="search-icon-form">
+                            <input class="search-icon-form__input" id="search" type="search">
+                            <label for="search" class="search-icon-form__label">
+                                <svg class="search-icon-form__svg" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+                                    <path
+                                        d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z" />
+                                </svg>
+                            </label>
+                        </form>
+                    </li>
                 </ul>
-            </nav>
-            <button class="header-button-basket">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
-                    height="27" viewBox="0 0 20 27">
-                    <path
-                        d="M15.995483,4.9985275 C15.995483,4.9985275 14.496216,4.9985275 14.496216,4.9985275 C14.496216,3.3417358 12.483032,1.998188 9.998779,1.998188 C7.5144043,1.998188 5.5009766,3.3417358 5.5009766,4.9985275 C5.5009766,4.9985275 4.001831,4.9985275 4.001831,4.9985275 C2.3458252,4.9985275 1.0032959,6.3412437 1.0032959,7.997204 C1.0032959,7.997204 1.0032959,22.995163 1.0032959,22.995163 C1.0032959,24.651123 2.3458252,25.994255 4.001831,25.994255 C4.001831,25.994255 15.995483,25.994255 15.995483,25.994255 C17.651611,25.994255 18.994263,24.651123 18.994263,22.995163 C18.994263,22.995163 18.994263,7.997204 18.994263,7.997204 C18.994263,6.3412437 17.651611,4.9985275 15.995483,4.9985275 ZM9.998779,3.4983559 C11.655029,3.4983559 12.99707,3.96241 12.99707,4.9985275 C12.99707,4.9985275 7.000244,4.9985275 7.000244,4.9985275 C7.000244,3.96241 8.342651,3.4983559 9.998779,3.4983559 ZM17.494995,22.995163 C17.494995,23.823143 16.823486,24.494087 15.995483,24.494087 C15.995483,24.494087 4.001831,24.494087 4.001831,24.494087 C3.173584,24.494087 2.5024414,23.823143 2.5024414,22.995163 C2.5024414,22.995163 2.5024414,21.495407 2.5024414,21.495407 C2.5024414,21.495407 17.494995,21.495407 17.494995,21.495407 C17.494995,21.495407 17.494995,22.995163 17.494995,22.995163 ZM17.494995,19.99524 C17.494995,19.99524 2.5024414,19.99524 2.5024414,19.99524 C2.5024414,19.99524 2.5024414,7.997204 2.5024414,7.997204 C2.5024414,7.168808 3.173584,6.497452 4.001831,6.497452 C4.001831,6.497452 5.5009766,6.497452 5.5009766,6.497452 C5.5009766,6.497452 5.5009766,10.997543 5.5009766,10.997543 C5.5009766,10.997543 7.000244,10.997543 7.000244,10.997543 C7.000244,10.997543 7.000244,6.497452 7.000244,6.497452 C7.000244,6.497452 12.99707,6.497452 12.99707,6.497452 C12.99707,6.497452 12.99707,10.997543 12.99707,10.997543 C12.99707,10.997543 14.496216,10.997543 14.496216,10.997543 C14.496216,10.997543 14.496216,6.497452 14.496216,6.497452 C14.496216,6.497452 15.995483,6.497452 15.995483,6.497452 C16.823975,6.497452 17.494995,7.168808 17.494995,7.997204 C17.494995,7.997204 17.494995,19.99524 17.494995,19.99524 Z" />
-                </svg>
-            </button>
-            <form action="search" class="search-icon-form">
-                <input class="search-icon-form__input" id="search" type="search">
-                <label for="search" class="search-icon-form__label">
-                    <svg class="search-icon-form__svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+                <!-- <button class="header-button-basket">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
+                        height="27" viewBox="0 0 20 27">
                         <path
-                            d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z" />
+                            d="M15.995483,4.9985275 C15.995483,4.9985275 14.496216,4.9985275 14.496216,4.9985275 C14.496216,3.3417358 12.483032,1.998188 9.998779,1.998188 C7.5144043,1.998188 5.5009766,3.3417358 5.5009766,4.9985275 C5.5009766,4.9985275 4.001831,4.9985275 4.001831,4.9985275 C2.3458252,4.9985275 1.0032959,6.3412437 1.0032959,7.997204 C1.0032959,7.997204 1.0032959,22.995163 1.0032959,22.995163 C1.0032959,24.651123 2.3458252,25.994255 4.001831,25.994255 C4.001831,25.994255 15.995483,25.994255 15.995483,25.994255 C17.651611,25.994255 18.994263,24.651123 18.994263,22.995163 C18.994263,22.995163 18.994263,7.997204 18.994263,7.997204 C18.994263,6.3412437 17.651611,4.9985275 15.995483,4.9985275 ZM9.998779,3.4983559 C11.655029,3.4983559 12.99707,3.96241 12.99707,4.9985275 C12.99707,4.9985275 7.000244,4.9985275 7.000244,4.9985275 C7.000244,3.96241 8.342651,3.4983559 9.998779,3.4983559 ZM17.494995,22.995163 C17.494995,23.823143 16.823486,24.494087 15.995483,24.494087 C15.995483,24.494087 4.001831,24.494087 4.001831,24.494087 C3.173584,24.494087 2.5024414,23.823143 2.5024414,22.995163 C2.5024414,22.995163 2.5024414,21.495407 2.5024414,21.495407 C2.5024414,21.495407 17.494995,21.495407 17.494995,21.495407 C17.494995,21.495407 17.494995,22.995163 17.494995,22.995163 ZM17.494995,19.99524 C17.494995,19.99524 2.5024414,19.99524 2.5024414,19.99524 C2.5024414,19.99524 2.5024414,7.997204 2.5024414,7.997204 C2.5024414,7.168808 3.173584,6.497452 4.001831,6.497452 C4.001831,6.497452 5.5009766,6.497452 5.5009766,6.497452 C5.5009766,6.497452 5.5009766,10.997543 5.5009766,10.997543 C5.5009766,10.997543 7.000244,10.997543 7.000244,10.997543 C7.000244,10.997543 7.000244,6.497452 7.000244,6.497452 C7.000244,6.497452 12.99707,6.497452 12.99707,6.497452 C12.99707,6.497452 12.99707,10.997543 12.99707,10.997543 C12.99707,10.997543 14.496216,10.997543 14.496216,10.997543 C14.496216,10.997543 14.496216,6.497452 14.496216,6.497452 C14.496216,6.497452 15.995483,6.497452 15.995483,6.497452 C16.823975,6.497452 17.494995,7.168808 17.494995,7.997204 C17.494995,7.997204 17.494995,19.99524 17.494995,19.99524 Z" />
                     </svg>
-                </label>
-            </form>
+                </button>
+                <form action="search" class="search-icon-form">
+                    <input class="search-icon-form__input" id="search" type="search">
+                    <label for="search" class="search-icon-form__label">
+                        <svg class="search-icon-form__svg" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+                            <path
+                                d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z" />
+                        </svg>
+                    </label>
+                </form> -->
+            </nav>
+
         </div>
         <section class="header-info">
             <a href="#" class="slider-arrow-left"></a>
@@ -158,7 +184,7 @@
             </div>
             <div class="gallery">
                 <div class="our-project-card">
-                    <img src="img/card-1.png" alt="card" width="370px" height="237px" class="card-img">
+                    <img src="img/card-1.png" alt="card" width="370" height="237" class="card-img">
                     <div class="card-description">
                         <h3 class="card-title">Claritas Etiam Processus</h3>
                         <p class="card-txt">Photography, Nature</p>
@@ -180,7 +206,7 @@
                 </div>
 
                 <div class="our-project-card">
-                    <img src="img/card-2.png" alt="card" width="370px" height="237px" class="card-img">
+                    <img src="img/card-2.png" alt="card" width="370" height="237" class="card-img">
                     <div class="card-description">
                         <h3 class="card-title">Quam Nutamus Farum</h3>
                         <p class="card-txt">Graphic Design, Mock-Up</p>
@@ -202,7 +228,7 @@
                 </div>
 
                 <div class="our-project-card">
-                    <img src="img/card-3.png" alt="card" width="370px" height="237px" class="card-img">
+                    <img src="img/card-3.png" alt="card" width="370" height="237" class="card-img">
                     <div class="card-description">
                         <h3 class="card-title">Usus Legentis Videntur</h3>
                         <p class="card-txt">Photography, Holiday</p>
@@ -224,7 +250,7 @@
                 </div>
 
                 <div class="our-project-card">
-                    <img src="img/card-4.png" alt="card" width="370px" height="237px" class="card-img">
+                    <img src="img/card-4.png" alt="card" width="370" height="237" class="card-img">
                     <div class="card-description">
                         <h3 class="card-title">Claritas Etiam Processus</h3>
                         <p class="card-txt">Photography, Nature</p>
@@ -246,7 +272,7 @@
                 </div>
 
                 <div class="our-project-card">
-                    <img src="img/card-5.png" alt="card" width="370px" height="237px" class="card-img">
+                    <img src="img/card-5.png" alt="card" width="370" height="237" class="card-img">
                     <div class="card-description">
                         <h3 class="card-title">Quam Nutamus Farum</h3>
                         <p class="card-txt">Graphic Design, Mock-Up</p>
@@ -268,7 +294,7 @@
                 </div>
 
                 <div class="our-project-card">
-                    <img src="img/card-6.png" alt="card" width="370px" height="237px" class="card-img">
+                    <img src="img/card-6.png" alt="card" width="370" height="237" class="card-img">
                     <div class="card-description">
                         <h3 class="card-title">Usus Legentis Videntur</h3>
                         <p class="card-txt">Photography, Holiday</p>
@@ -315,12 +341,14 @@
         </section>
 
         <section class="mobile">
-            <img src="img/iphone.png" alt="phone" class="phone=img">
+            <img src="img/iphone.png" alt="phone" class="phone-img full-site" width="423">
+
             <div class="mobile-content">
                 <h3 class="mobile-title">Excellent for Mobile Devices.</h3>
                 <p class="mobile-txt">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui
                     nunc nobis videntur parum clari, fiant sollemnes in futurum.
                 </p>
+                <img src="img/iphone.png" alt="phone" class="phone-img mobile-site" width="250" height="300">
                 <ul class="mobile-list">
                     <li class="mobile-list-item">Nam liber tempor cum soluta nobis eleifend option</li>
                     <li class="mobile-list-item">Option congue nihil imperdiet doming id quod mazim placerat facer</li>
@@ -437,14 +465,94 @@
             </div>
         </section>
         <section class="our-partners">
-            <a href="#" class="our-partners-link1"></a>
-            <a href="#" class="our-partners-link2"></a>
-            <a href="#" class="our-partners-link3"></a>
-            <a href="#" class="our-partners-link4"></a>
+            <a href="#" class="our-partners-link2">
+                <img class="partner-img full-site" src="img/partner-logo2.png" alt="photo" width="210">
+                <img class="partner-img mobile-site" src="img/partner-logo2.png" alt="photo" width="100">
+            </a>
+            <a href="#" class="our-partners-link1">
+                <img class="partner-img full-site" src="img/partner-logo1.png" alt="photo" width="210">
+                <img class="partner-img mobile-site" src="img/partner-logo1.png" alt="photo" width="100">
+            </a>
+            <a href="#" class="our-partners-link3">
+                <img class="partner-img full-site" src="img/partner-logo3.png" alt="photo" width="210">
+                <img class="partner-img mobile-site" src="img/partner-logo3.png" alt="photo" width="100">
+            </a>
+            <a href="#" class="our-partners-link4">
+                <img class="partner-img full-site" src="img/partner-logo4.png" alt="photo" width="210">
+                <img class="partner-img mobile-site" src="img/partner-logo4.png" alt="photo" width="100">
+            </a>
         </section>
     </main>
     <footer>
-
+        <section class="footer-top">
+            <div class="footer-top-colomn">
+                <a class="logo-link" href="index.html">
+                    <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="56">
+                        <path
+                            d="M52.873,55.128 L58.125,45.939 L63.377,55.128 L52.873,55.128 ZM46.303,45.172 L56.811,45.172 L51.557,54.359 L46.303,45.172 ZM51.557,34.451 L56.811,43.641 L46.303,43.641 L51.557,34.451 ZM39.738,33.686 L50.243,33.686 L44.990,42.874 L39.738,33.686 ZM44.990,22.967 L50.243,32.154 L39.738,32.154 L44.990,22.967 ZM33.168,22.202 L43.676,22.202 L38.422,31.390 L33.168,22.202 ZM38.422,11.480 L43.676,20.671 L33.168,20.671 L38.422,11.480 ZM26.600,10.713 L37.108,10.713 L31.854,19.905 L26.600,10.713 ZM31.854,-0.006 L37.108,9.184 L26.600,9.184 L31.854,-0.006 ZM20.032,20.671 L25.286,11.480 L30.540,20.671 L20.032,20.671 ZM13.465,32.154 L18.718,22.967 L23.971,32.154 L13.465,32.154 ZM6.897,43.641 L12.151,34.451 L17.404,43.641 L6.897,43.641 ZM0.331,55.128 L5.582,45.939 L10.836,55.128 L0.331,55.128 ZM17.404,45.172 L12.151,54.359 L6.897,45.172 L17.404,45.172 ZM23.971,33.686 L18.718,42.874 L13.465,33.686 L23.971,33.686 ZM30.540,22.202 L25.286,31.390 L20.032,22.202 L30.540,22.202 ZM37.108,55.128 L26.600,55.128 L31.854,45.939 L37.108,55.128 ZM43.676,45.172 L38.422,54.359 L33.168,45.172 L43.676,45.172 ZM50.243,55.128 L39.738,55.128 L44.990,45.939 L50.243,55.128 Z" />
+                    </svg>
+                    <span class="logo-txt">Waxom</span>
+                </a>
+                <p class="footer-top-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+                <a href="#" class="colomn-link">Read More</a>
+            </div>
+            <div class="footer-top-colomn">
+                <h3 class="footer-colomn-title">Recent Posts</h3>
+                <a href="#" class="footer-link footer-strip">
+                    <span class="footer-link-title">September 08, 2015</span>
+                    <span class="footer-link-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span>
+                </a>
+                <a href="#" class="footer-link footer-strip">
+                    <span class="footer-link-title">September 08, 2015</span>
+                    <span class="footer-link-txt">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</span>
+                </a>
+                <a href="#" class="footer-link">
+                    <span class="footer-link-title">September 08, 2015</span>
+                    <span class="footer-link-txt">Claritas est etiam processus dynamicus, qui sequitur mutationem per
+                        seacula quarta
+                        decima</span>
+                </a>
+            </div>
+            <div class="footer-top-colomn">
+                <h3 class="footer-colomn-title">Our Twitter</h3>
+                <article>
+                    <p class="footer-twitter-txt"><a href="#" class="twitter-link">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+                    <span class="footer-link-title">3 mins ago</span>
+                </article>
+                <article>
+                    <p class="footer-twitter-txt">Mirum est <a href="#" class="twitter-link">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
+                    </p>
+                    <span class="footer-link-title">5 hours ago</span>
+                </article>
+                <article>
+                    <p class="footer-twitter-txt">Soluta nobis option <a href="#" class="twitter-link">bit.ly/1Hniso7</a>
+                    </p>
+                    <span class="footer-link-title">20 days ago</span>
+                </article>
+            </div>
+            <div class="footer-top-colomn">
+                <h3 class="footer-colomn-title">Dribbble Widget</h3>
+                <img class="footer-top-img" src="img/footer-bg4.png" alt="photo" width="130" height="98">
+                <img class="footer-top-img" src="img/footer-bg3.png" alt="photo" width="130" height="98">
+                <img class="footer-top-img" src="img/footer-bg2.png" alt="photo" width="130" height="98">
+                <img class="footer-top-img" src="img/footer-bg1.png" alt="photo" width="130" height="98">
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <div class="footer-list-link">
+                <span class="footer-list-txt">Copyright &copy; 2015
+                    <a href="#" class="footer-bottom-link">Waxom</a>
+                </span>
+                <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                <a href="#" class="footer-bottom-link">FAQ</a>
+                <a href="#" class="footer-bottom-link">Support</a>
+            </div>
+            <div class="footer-list-link">
+                <span class="footer-list-txt">Designed by<a href="#" class="footer-bottom-link">ThemeFire</a></span>
+                <span class="footer-list-txt">Only on<a href="#" class="footer-bottom-link border-link">Envato
+                        Market</a></span>
+            </div>
+        </section>
     </footer>
 
 </body>
