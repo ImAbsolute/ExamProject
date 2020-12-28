@@ -1312,6 +1312,7 @@ body {
 @media (max-width: 576px) {
     body {
         max-width: 100%;
+        margin: 0 auto;
     }
     .heading {
         width: 100%;
@@ -1438,6 +1439,9 @@ body {
     }
     .multi_photo {
         min-height: 97px;
+    }
+    .exapmle-view {
+        height: 400px;
     }
     .promo {
         padding: 20px;
